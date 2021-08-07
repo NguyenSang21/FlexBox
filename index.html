@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Flexbox</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <h1 class="title">FlexBox</h1>
+  <h2 class="title-section">1.Display Flex</h2>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h2 class="title-section">2.Flex Direction</h2>
+  <h3>row(default)</h3>
+  <div class="container flex-direction-row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>row-reverse</h3>
+  <div class="container flex-direction-row-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>column</h3>
+  <div class="container flex-direction-column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>column-reverse</h3>
+  <div class="container flex-direction-column-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h2 class="title-section">3.Flex Wrap</h2>
+  <h3>nowrap</h3>
+  <div class="container flex-nowrap">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h3>wrap</h3>
+  <div class="container flex-wrap">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h3>reverse</h3>
+  <div class="container flex-wrap-reverse">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h2 class="title-section">3.Flex flow (shorthand)</h2>
+  <h3>row wrap</h3>
+  <div class="container flex-flow-rowwrap">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h3>row nowrap</h3>
+  <div class="container flex-flow-rownowrap">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h2 class="title-section">4.Justify content</h2>
+  <h3>flex-start</h3>
+  <div class="container justify-start">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="container justify-end">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h3>center</h3>
+  <div class="container justify-center">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h3>space-between</h3>
+  <div class="container justify-between">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h3>space-around</h3>
+  <div class="container justify-around">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h3>space-evenly</h3>
+  <div class="container justify-evenly">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+  </div>
+  <h2 class="title-section">5.Align Items</h2>
+  <h3>flex-start</h3>
+  <div class="container h-100 items-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="container h-100 items-end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+  <h3>center</h3>
+  <div class="container h-100 items-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+  <h3>stretch</h3>
+  <div class="container h-100 items-stretch">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+  <h3>baseline</h3>
+  <div class="container h-100 items-baseline">
+    <div class="item h-30">1</div>
+    <div class="item h-50 font-40">2</div>
+    <div class="item h-30">3</div>
+  </div>
+  <h2 class="title-section">6.Align content</h2>
+  <h3>flex start</h3>
+  <div class="container h-200 flex-flow-rowwrap content-start">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+  </div>
+  <h3>flex end</h3>
+  <div class="container h-200 flex-flow-rowwrap content-end">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+  </div>
+  <h3>flex center</h3>
+  <div class="container h-200 flex-flow-rowwrap content-center">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+  </div>
+  <h3>space-between</h3>
+  <div class="container h-200 flex-flow-rowwrap content-between">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h3>stretch</h3>
+  <div class="container h-200 flex-flow-rowwrap content-stretch">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+  <h3>space-around</h3>
+  <div class="container h-200 flex-flow-rowwrap content-around">
+    <div class="item w-300">1</div>
+    <div class="item w-300">2</div>
+    <div class="item w-300">3</div>
+    <div class="item w-300">4</div>
+    <div class="item w-300">5</div>
+    <div class="item w-300">6</div>
+  </div>
+</body>
+</html>
